@@ -1,0 +1,38 @@
+{
+  "name": "@mapping/net",
+  "version": "2.3.0",
+  "description": "Internal network penetration, mapping external network",
+  "main": "bin/index.js",
+  "bin": {
+    "mapping": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js --client",
+    "client": "node index.js --client",
+    "server": "node index.js --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-ba/mapping-net.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "network",
+    "mapping"
+  ],
+  "author": "Baran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-ba/mapping-net/issues"
+  },
+  "homepage": "https://github.com/code-ba/mapping-net#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^8.0.0",
+    "import-local": "^3.0.2",
+    "npmlog": "^4.1.2"
+  }
+}
