@@ -3,14 +3,23 @@
 ### 使用安装
 
 - `npm i -g @mapping/net`，安装完成通过以下指令启动服务
-- `npm init mapping-net`，不用安装，可以直接使用以下指令
-  - 客户端：`npm init mapping-net client --server_addr 166.169.66.99 --server_port 81 --token "helloServer" --local_ip 127.0.0.1 --local_port 4000 --remote_port 80`
-  - 服务端：`npm init mapping-net server --server_port 81 --token "helloServer"`
+  - `mapping server --server_port 81 --token "helloServer"`
+
+
+- `npm init mapping`，免安装可以直接使用以下指令
+  - 客户端：`npm init mapping client --server_addr 166.169.66.99 --server_port 81 --token "helloServer" --local_ip 127.0.0.1 --local_port 4000 --remote_port 80`
+  - 服务端：`npm init mapping server --server_port 81 --token "helloServer"`
+
+
 - 通过`git`安装
   - `git clone https://github.com/code-ba/mapping-net.git`
   - `cd mapping-net && npm install`
-  - 配置`config.client.js`、`config.server.js`
-  - 通过指令启动，如`npx mapping-net`
+  - 通过指令启动，如`npm run client` or `npm run server`（启动多个服务需要配置）
+    - 配置`config.client.js`、`config.server.js`
+  - 通过指令启动单个服务：
+    - `node bin/index.js client --server_addr 166.169.66.99`
+    - `node bin/index.js server --server_port 81`
+
 
 ---
 

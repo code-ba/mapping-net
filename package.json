@@ -1,6 +1,6 @@
 {
   "name": "@mapping/net",
-  "version": "2.3.0",
+  "version": "2.3.2",
   "description": "Internal network penetration, mapping external network",
   "main": "bin/index.js",
   "bin": {
@@ -8,9 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js --client",
-    "client": "node index.js --client",
-    "server": "node index.js --server"
+    "start": "node bin/index.js client",
+    "client": "node bin/index.js client",
+    "server": "node bin/index.js server"
   },
   "repository": {
     "type": "git",
