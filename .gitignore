@@ -169,3 +169,8 @@ $RECYCLE.BIN/
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+.tmp-test/
+# 日志目录：log-file.js 按月生成（YYYY-MM）
+/2[0-9][0-9][0-9]-[0-1][0-9]/
+# husky 钩子运行时目录（npm install 时自动生成）
+.husky/_/

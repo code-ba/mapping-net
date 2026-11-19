@@ -1,38 +1,73 @@
 {
   "name": "@mapping/net",
-  "version": "2.3.2",
+  "version": "3.0.0",
   "description": "Internal network penetration, mapping external network",
   "main": "bin/index.js",
   "bin": {
     "mapping": "bin/index.js"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node bin/index.js client",
     "client": "node bin/index.js client",
-    "server": "node bin/index.js server"
+    "server": "node bin/index.js server",
+    "lint": "eslint . --ext .js,.mjs,.cjs",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "version:bump": "node scripts/bump-version.mjs",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/code-ba/mapping-net.git"
   },
+  "files": [
+    "bin/",
+    "lib/",
+    "config-client.yml",
+    "config-server.yml"
+  ],
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "keywords": [
     "network",
     "mapping"
   ],
-  "author": "Baran",
-  "license": "ISC",
+  "author": {
+    "name": "Baran",
+    "email": "info@cxvh.com",
+    "url": "https://github.com/code-ba"
+  },
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/code-ba/mapping-net/issues"
+    "url": "https://github.com/code-ba/mapping-net/issues",
+    "email": "info@cxvh.com"
   },
   "homepage": "https://github.com/code-ba/mapping-net#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "commander": "^8.0.0",
+    "configstore": "6.0.0",
     "import-local": "^3.0.2",
-    "npmlog": "^4.1.2"
+    "npmlog": "^4.1.2",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "axios": "1.13.1",
+    "eslint": "8.57.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "2.8.8"
+  },
+  "lint-staged": {
+    "*.{js,mjs,cjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
