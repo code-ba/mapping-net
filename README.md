@@ -24,13 +24,6 @@ mapping server --port 81 --token "sk-123456"
 mapping client --server 166.169.66.99:81@sk-123456
 ```
 
-### init 免安装
-
-- `npm init mapping`，免安装可以直接使用以下指令
-
-  - 客户端：`npm init mapping client --server 166.169.66.99:81@sk-123456 --ports 127.0.0.1:80:4000`
-  - 服务端：`npm init mapping server --port 81 --token "sk-123456"`
-
 ### 源码启动
 
 - 通过`git`安装
@@ -41,6 +34,13 @@ mapping client --server 166.169.66.99:81@sk-123456
     - `node bin/index.js server --port 81`
   - 通过指令启动，如`npm run client` or `npm run server`（启动多个服务需要配置）
     - 配置`config-client.yml`、`config-server.yml`
+
+### ~~init 免安装~~
+
+- ~~`npm init mapping`，免安装可以直接使用以下指令~~
+
+  - ~~客户端：`npm init mapping client --server 166.169.66.99:81@sk-123456 --ports 127.0.0.1:80:4000`~~
+  - ~~服务端：`npm init mapping server --port 81 --token "sk-123456"`~~
 
 ---
 

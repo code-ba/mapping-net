@@ -1,7 +1,7 @@
 {
   "name": "@mapping/net",
   "version": "3.0.0",
-  "description": "Internal network penetration, mapping external network",
+  "description": "Node.js CLI for TCP tunneling and port forwarding through a public server",
   "main": "bin/index.js",
   "bin": {
     "mapping": "bin/index.js"
@@ -36,7 +36,19 @@
   },
   "keywords": [
     "network",
-    "mapping"
+    "networking",
+    "mapping",
+    "tcp",
+    "tunnel",
+    "tunneling",
+    "tcp-tunnel",
+    "port-mapping",
+    "port-forwarding",
+    "intranet-penetration",
+    "nat-traversal",
+    "remote-access",
+    "nodejs",
+    "cli"
   ],
   "author": {
     "name": "Baran",
