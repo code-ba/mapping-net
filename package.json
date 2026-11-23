@@ -1,6 +1,6 @@
 {
   "name": "@mapping/net",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Node.js CLI for TCP tunneling and port forwarding through a public server",
   "main": "bin/index.js",
   "bin": {
@@ -62,18 +62,19 @@
   },
   "homepage": "https://github.com/code-ba/mapping-net#readme",
   "dependencies": {
-    "colors": "^1.4.0",
-    "commander": "^8.0.0",
+    "cli-spinner": "0.2.10",
+    "colors": "1.4.0",
+    "commander": "8.0.0",
     "configstore": "6.0.0",
-    "import-local": "^3.0.2",
-    "npmlog": "^4.1.2",
-    "yaml": "^2.9.1"
+    "import-local": "3.0.2",
+    "npmlog": "4.1.2",
+    "yaml": "2.9.1"
   },
   "devDependencies": {
     "axios": "1.13.1",
     "eslint": "8.57.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7",
     "prettier": "2.8.8"
   },
   "lint-staged": {
